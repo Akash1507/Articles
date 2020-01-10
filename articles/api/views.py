@@ -1,6 +1,6 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from articles.models import Article
-from articles.serializers import ArticleSerializer
+from articles.api.serializers import ArticleSerializer
 
 class ArticleListView(ListAPIView):
     queryset = Article.objects.all()
